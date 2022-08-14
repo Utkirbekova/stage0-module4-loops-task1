@@ -9,4 +9,8 @@ public class RepeatIsBad {
         return;
     }
 
+
+    public void repeatIsBad() {
+        repeatIsBad(20);
+    }
 }
