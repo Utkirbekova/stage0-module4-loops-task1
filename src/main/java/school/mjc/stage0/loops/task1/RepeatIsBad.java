@@ -1,13 +1,12 @@
 package school.mjc.stage0.loops.task1;
 
 public class RepeatIsBad {
-    public static void main(String[] args) {
-        repeatIsBad();
+    void repeatIsBad(int n) {
+        if (n > 0) {
+            repeatIsBad(n - 1);
+            System.out.print("writing the same code doesn't have much impact, and it's also time consuming\n");
+        }
+        return;
     }
 
-    public static void repeatIsBad() {
-        for (int runner = 0; runner < 20; ++runner) {
-            System.out.println("writing the same code doesn't have much impact, and it's also time consuming");
-        }
-    }
 }
