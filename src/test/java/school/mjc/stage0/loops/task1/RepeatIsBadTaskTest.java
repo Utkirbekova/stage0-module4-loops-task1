@@ -40,6 +40,6 @@ public class RepeatIsBadTaskTest extends BaseIOTest {
                 .collect(Collectors.toList());
 
         assertEquals(0, result.size());
-        assertEquals(20, souts.size());
+        assertEquals(0, souts.size());
     }
 }
