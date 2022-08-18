@@ -1,13 +1,17 @@
 package school.mjc.stage0.loops.task1;
 
 public class RepeatIsBad {
+    static int counter = 0;
 
-
-    void repeatIsBad() {
-        String s = "writing the same code doesn't have much impact, and it's also time consuming";
-        String i = "--------------------";
-        i = i.replaceAll("-", s + "\n");
-
-        System.out.print(i);
+    @SuppressWarnings("java:S106")
+    public void repeatIsBad() {
+        counter++;
+        if (counter == 21)
+            return;
+        else {
+            System.out.print("writing the same code doesn't have much impact, and it's also time consuming\n");
+            repeatIsBad();
+        }
     }
+
 }
